@@ -1,12 +1,45 @@
 /* global */
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
 body{
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+}
+p{
+    line-height: 1.5;
 }
 /* utilities */
 
 
 /* header */
+header.site-init{
+    background-color: gray;
+    height: 400px;
+    background-image: url(/img/header.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+header.site-init a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+header.site-init p{
+    margin-top: 5px;
+}
+
+/* main */
+img{
+    width: auto;
+}
+.main-container{
+    margin: 10px;
+}
+
+/* Houses and Penthhouses */
