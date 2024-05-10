@@ -1,45 +1,272 @@
 /* global */
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
 }
-img{
-    width: 100%;
+
+img {
+    max-width: 100%;
 }
-p{
+
+p {
+    font-size: 1.6rem;
     line-height: 1.5;
 }
-/* utilities */
 
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* utilities */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-c {
+    display: flex;
+}
+
+/* .margin-r-sm{
+    margin-right: 10rem;
+} */
+.bar {
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+}
+
+@media(max-width:758px) {
+
+    /* mobile presentation */
+    .bar {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .flex-c {
+        flex-direction: column;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.bt {
+    font-weight: bold;
+}
+
+.lt {
+    font-weight: 100;
+}
+.ul{
+    text-decoration: underline;
+}
+.space{
+    margin:5px;
+}
 
 /* header */
-header.site-init{
+.site-init {
     background-color: gray;
-    height: 400px;
+    height: 30rem;
     background-image: url(/img/header.jpg);
-    background-position: top center;
     background-size: cover;
     color: white;
     text-align: center;
 }
-header.site-init a{
-    color: white;
+
+header.site-init a {
     margin: 15px;
-    text-decoration: none;
 }
-header.site-init p{
+
+header.site-init p {
     margin-top: 5px;
 }
 
-/* main */
-img{
-    width: auto;
+/* more about us */
+.more-about-item {
+    margin-right: 1rem;
+    padding: 1rem;
 }
-.main-container{
-    margin: 10px;
+
+.more-about-item p {
+    text-align: justify;
+}
+
+@media(max-width:758px) {
+    .more-about-item img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Houses and Penthhouses */
+.houses-items {
+    margin-right: 1rem;
+    background-color: #dedede;
+}
+
+.houses-items a {
+    color: black;
+}
+
+.price {
+    color: rgb(18, 184, 3);
+}
+
+.houses-ico {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.houses-ico li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.houses-ico img {
+    margin-right: 10px;
+    max-width: 50%;
+}
+
+@media(max-width:758px) {
+    .houses-ico {
+        flex-direction: row;
+        margin: auto;
+        max-width: 50%;
+    }
+}
+
+/* Contact */
+.site-contact {
+    background-color: orange;
+    height: 20rem;
+}
+
+.site-contact a {
+    color: black;
+}
+
+/* Contact - footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+.contact-footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #dedede;
+    align-items: center;
+}
+
+.contact-footer a {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-footer-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* form */
+.form-container {
+    padding: 1rem;
+    background-color: #dedede;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.form-container fieldset {
+    font-size: 1.6rem;
+    margin: 1rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.form-control {
+    margin: 1rem;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    width: 70%;
+    padding: 3px;
+}
+
+.form-control label {
+    display: inline-block;
+    width: 150px;
+    font-size: 1.4rem;
+}
+
+.form-flex {
+    margin: 50px;
+    margin-left: 0;
+    align-items: center;
+    padding: 5px;
+}
+
+/* btn */
+.btn-sd {
+    display: block;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(207, 141, 26);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
